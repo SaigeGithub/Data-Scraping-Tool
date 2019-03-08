@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GetSchoolInfo</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="bg">
+<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+
+        
+
+<!-- <script src="server.js" defer></script>  -->
+<h1>Find Your Desired Schools Information</h1>
+<img class="logo" src="img/Saige.jpg" style="width:20%; height:20%;"><br>
+<p>The first button shows school name list <br> The second button lets you search <br> The third button gives you the full details.</p>
+<form action="/school">
+    <input class="button" type="submit" value="School List" />
+</form>
+
+<form action="/oneSchool" method ="POST">
+    <br><p>Enter the school you want to search and click on submit</p><input type="text" name="name">
+    <input class="button" style="border-radius: 5px; "type="submit" >
+</form>
+
+<br>
+
+<form action="/alldetails">
+    <input class="button" style="margin-top:20px; "type="submit" value="All Details" />
+</form>
+
+
+</body>
+</html>
